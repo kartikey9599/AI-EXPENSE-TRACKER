@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import Layout from "./Layout/Layout";
+import AddExpense from "./pages/AddExpense";
 
 function App() {
   return (
@@ -9,6 +12,10 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route element={<Layout />}>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/addexpense" element={<AddExpense />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
