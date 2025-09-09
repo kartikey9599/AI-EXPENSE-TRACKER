@@ -14,7 +14,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route element={<Layout />}>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/addexpense" element={<AddExpense />} />
+            <Route path="/add-expense" element={<AddExpense />} />
           </Route>
         </Routes>
       </BrowserRouter>

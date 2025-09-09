@@ -5,7 +5,10 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-8 py-4 shadow-md bg-white">
       {/* Logo / App Name */}
-      <h4 className="text-xl font-bold text-blue-600">AI Expense Tracker</h4>
+      <Link to={"/"}>
+        {" "}
+        <h4 className="text-xl font-bold text-blue-600">AI Expense Tracker</h4>
+      </Link>
 
       {/* Links + User Info */}
       <div className="flex items-center space-x-6">
@@ -15,7 +18,7 @@ const Navbar = () => {
           Dashboard
         </Link>
         <Link
-          to="/addexpense"
+          to="/add-expense"
           className="text-gray-700 hover:text-blue-600 transition font-medium">
           Add Expense
         </Link>
